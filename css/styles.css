@@ -522,14 +522,6 @@ img {
 	color: var(--primary-text-color);
 }
 
-.portfolio-item:hover {
-	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-/* TODO: */
-.shadow:focus {
-	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .portfolio-card {
 	padding: 20px 24px;
 }
@@ -569,11 +561,14 @@ img {
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-item:hover .item-overlay::before,
+.portfolio-item .link:hover .item-overlay::before,
 .portfolio-item .link:focus .item-overlay::before,
-.portfolio-item:hover .text-overlay,
-.portfolio-item .link:focus .text-overlay {
+.portfolio-item .link:hover .text-overlay,
+.portfolio-item .link:focus .text-overlay,
+.portfolio-item:hover,
+.portfolio-item .link:focus {
 	transform: translateY(0);
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .footer-background {
