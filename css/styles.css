@@ -548,7 +548,7 @@ img {
 	background: rgba(33, 150, 243, 0.9);
 	width: 100%;
 	height: 100%;
-	transform: translatey(101%);
+	transform: translateY(101%);
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -565,7 +565,7 @@ img {
 	color: var(--accent-text-color);
 	font-size: 18px;
 	line-height: 1.556;
-	transform: translatey(100%);
+	transform: translateY(100%);
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -573,7 +573,7 @@ img {
 .portfolio-item .link:focus .item-overlay::before,
 .portfolio-item:hover .text-overlay,
 .portfolio-item .link:focus .text-overlay {
-	transform: translatey(0);
+	transform: translateY(0);
 }
 
 .footer-background {
