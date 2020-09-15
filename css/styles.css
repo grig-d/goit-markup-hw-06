@@ -561,14 +561,21 @@ img {
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+:focus {
+	outline: none;
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus-within {
+	border: 1px solid rgba(0, 0, 0, 0.16);
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .portfolio-item .link:hover .item-overlay::before,
 .portfolio-item .link:focus .item-overlay::before,
 .portfolio-item .link:hover .text-overlay,
-.portfolio-item .link:focus .text-overlay,
-.portfolio-item:hover,
-.portfolio-item .link:focus {
+.portfolio-item .link:focus .text-overlay {
 	transform: translateY(0);
-	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .footer-background {
