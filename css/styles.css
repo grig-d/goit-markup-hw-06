@@ -30,6 +30,10 @@ img {
 	height: auto;
 }
 
+:focus {
+	outline-color: var(--accent-color);
+}
+
 .container {
 	width: 1200px;
 	padding-left: 15px;
@@ -726,4 +730,25 @@ img {
 
 .close-button:hover .close-icon {
 	fill: var(--accent-color);
+}
+
+/* experiment page */
+.field-wrap {
+	position: relative;;
+}
+
+.field-wrap input {
+	padding-left: 26px;
+}
+
+/* вместо спан юзать свг-юз */
+.span {
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	transform: translateY(-50%);
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-color: grey;
 }
