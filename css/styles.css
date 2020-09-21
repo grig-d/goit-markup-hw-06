@@ -812,6 +812,15 @@ img {
 	fill: var(--accent-color);
 }
 
+/* TODO: */
+.form-heading {
+	text-align: center;
+	/*  */
+}
+
+
+
+/* ----------------------------------------------------------------------------- */
 /* experiment page */
 .field-wrap {
 	position: relative;
