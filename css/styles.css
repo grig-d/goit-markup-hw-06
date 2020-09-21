@@ -2,7 +2,7 @@
 	--title-text-color: #212121;
 	--primary-text-color: #757575;
 	--accent-color: #2196f3;
-	--hover-accent-color:#188ce8;
+	--hover-accent-color: #188ce8;
 	--accent-text-color: #ffffff;
 	--hero-text-color: #ffffff;
 	--first-background-color: #ffffff;
@@ -111,6 +111,12 @@ img {
 
 .logo > .logo-span {
 	color: var(--accent-color);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo > .logo-span:hover,
+.logo > .logo-span:focus {
+	color: var(--hover-accent-color);
 }
 
 .site-nav .link,
@@ -196,6 +202,11 @@ img {
 	background-color: var(--accent-color);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	cursor: pointer;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero .button:hover {
+	background-color: var(--hover-accent-color);
 }
 
 .section {
@@ -601,7 +612,7 @@ img {
 }
 
 .join-heading {
-	margin: 0;
+	margin: 0 0 20px 0;
 }
 
 .footer-net-list {
@@ -634,9 +645,77 @@ img {
 	fill: #ffffff;
 }
 
-/* for next homework */
 .footer-submit {
 	width: calc((100% - 30px) / 2);
+	padding-top: 72px;
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 16px;
+	color: #ffffff;
+}
+
+.subscribe-form {
+	display: flex;
+	align-items: center;
+}
+
+.user-email {
+	display: inline-flex;
+	width: 358px;
+	height: 50px;
+	margin-right: 12px;
+	padding-left: 16px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	box-sizing: border-box;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	background-color: var(--footer-background-color);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.03em;
+	color: #ffffff;
+	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.user-email::placeholder {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-button {
+	display: inline-flex;
+	width: 200px;
+	height: 50px;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--accent-color);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border: none;
+	border-radius: 4px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 30px;
+	letter-spacing: 0.06em;
+	color: #ffffff;
+	cursor: pointer;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.user-email:hover,
+.user-email:focus {
+	border-color: var(--accent-color);
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+	background-color: var(--hover-accent-color);
+}
+
+.footer-send-icon {
+	margin-left: 10px;
+	width: 24px;
+	height: 24px;
+	fill: #ffffff;
 }
 
 .logo.logo-footer,
@@ -735,7 +814,7 @@ img {
 
 /* experiment page */
 .field-wrap {
-	position: relative;;
+	position: relative;
 }
 
 .field-wrap input {
@@ -753,3 +832,11 @@ img {
 	height: 16px;
 	background-color: grey;
 }
+
+/* 
+
+sprite-form-email
+sprite-form-person
+sprite-form-phone
+
+ */
