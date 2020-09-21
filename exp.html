@@ -47,7 +47,7 @@
 		</header>
 		<!-- start your experiment -->
 		<div style="display: flex">
-			<button type="button" class="button" data-modal-open style="margin: 50px auto">Заказать услугу</button>
+			<button type="button" class="form-button" data-modal-open style="margin: 50px auto">Заказать услугу</button>
 		</div>
 		<p>.</p>
 		<p>.</p>
@@ -129,7 +129,7 @@
 							required
 							autocomplete="off"
 						/>
-						<button class="subscribe-button" type="submit">
+						<button class="form-button">
 							Подписаться
 							<svg class="footer-send-icon">
 								<use href="./images/icons/sprite.svg#sprite-footer-send"></use>
@@ -148,8 +148,16 @@
 					</svg>
 				</button>
 				<!--  -->
-					<p class="form-heading">Оставьте свои данные, мы вам перезвоним</p>
-					<!-- <form id="form">
+				<p class="form-heading">Оставьте свои данные, мы вам перезвоним</p>
+
+				<form action="" class="form" id="contact-form">
+					<input type="text" name="user-name" class="form-field" required />
+					<input type="tel" name="user-phone" class="form-field" required />
+					<input type="email" name="user-email" class="form-field" />
+					<textarea name="user-message" class="form-field" placeholder="Введите текст" cols="30" rows="10"></textarea>
+					<button class="form-button">Отправить</button>
+				</form>
+				<!-- <form id="form">
 						<label for="checkbox">Jawohl!</label>
 						<label for="name">Имя</label>
 						<div class="field-wrap">
