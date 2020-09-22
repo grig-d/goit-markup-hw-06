@@ -153,7 +153,7 @@
 					<label class="label">
 						<span class="label-span">Имя</span>
 						<div class="field-wrap">
-							<input type="text" name="user-name" class="form-field" pattern="^[А-Яа-яЁё\s]+$" required />
+							<input type="text" name="user-name" class="form-field" pattern="^[А-Яа-яЁё\s]+$" autocomplete="off" required />
 							<div class="input-icon-wrap">
 								<svg width="12" height="12">
 									<use href="./images/icons/sprite.svg#sprite-form-person"></use>
@@ -164,7 +164,7 @@
 					<label class="label">
 						<span class="label-span">Телефон</span>
 						<div class="field-wrap">
-							<input type="tel" name="user-phone" class="form-field" pattern="[0-9]{10}" required />
+							<input type="tel" name="user-phone" class="form-field" pattern="[0-9]{10}" autocomplete="off" required />
 							<div class="input-icon-wrap">
 								<svg width="13" height="13">
 									<use href="./images/icons/sprite.svg#sprite-form-phone"></use>
@@ -175,7 +175,7 @@
 					<label class="label">
 						<span class="label-span">Почта</span>
 						<div class="field-wrap">
-							<input type="email" name="user-email" class="form-field" />
+							<input type="email" name="user-email" class="form-field" autocomplete="off" />
 							<div class="input-icon-wrap">
 								<svg width="15" height="12">
 									<use href="./images/icons/sprite.svg#sprite-form-email"></use>
@@ -185,8 +185,9 @@
 					</label>
 					<label class="label">
 						<span class="label-span">Комментарий</span>
-						<textarea name="user-message" class="form-field textarea" placeholder="Введите текст" rows="5"></textarea>
+						<textarea name="user-message" class="form-field textarea" placeholder="Введите текст" ></textarea>
 					</label>
+					<div class="deal-check"> <input type="checkbox"> Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></div>
 					<button class="form-button">Отправить</button>
 				</form>
 			</div>
