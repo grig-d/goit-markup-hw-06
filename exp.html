@@ -149,12 +149,23 @@
 				</button>
 				<!--  -->
 				<p class="form-heading">Оставьте свои данные, мы вам перезвоним</p>
-
 				<form action="" class="form" id="contact-form">
-					<input type="text" name="user-name" class="form-field" required />
-					<input type="tel" name="user-phone" class="form-field" required />
-					<input type="email" name="user-email" class="form-field" />
-					<textarea name="user-message" class="form-field" placeholder="Введите текст" cols="30" rows="10"></textarea>
+					<label class="label">
+						<span class="label-span">Имя</span>
+						<input type="text" name="user-name" class="form-field" required
+					/></label>
+					<label class="label">
+						<span class="label-span">Телефон</span>
+						<input type="tel" name="user-phone" class="form-field" required
+					/></label>
+					<label class="label">
+						<span class="label-span">Почта</span>
+						<input type="email" name="user-email" class="form-field"
+					/></label>
+					<label class="label">
+						<span class="label-span">Комментарий</span>
+						<textarea name="user-message" class="form-field textarea" placeholder="Введите текст" rows="5"></textarea>
+					</label>
 					<button class="form-button">Отправить</button>
 				</form>
 				<!-- <form id="form">
