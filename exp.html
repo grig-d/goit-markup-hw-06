@@ -153,7 +153,14 @@
 					<label class="label">
 						<span class="label-span">Имя</span>
 						<div class="field-wrap">
-							<input type="text" name="user-name" class="form-field" pattern="^[А-Яа-яЁё\s]+$" autocomplete="off" required />
+							<input
+								type="text"
+								name="user-name"
+								class="form-field"
+								pattern="^[A-Za-zА-Яа-яЁёЇїЄєІі\s]+$"
+								autocomplete="off"
+								required
+							/>
 							<div class="input-icon-wrap">
 								<svg width="12" height="12">
 									<use href="./images/icons/sprite.svg#sprite-form-person"></use>
@@ -185,9 +192,15 @@
 					</label>
 					<label class="label">
 						<span class="label-span">Комментарий</span>
-						<textarea name="user-message" class="form-field textarea" placeholder="Введите текст" ></textarea>
+						<textarea name="user-message" class="form-field textarea" placeholder="Введите текст"></textarea>
 					</label>
-					<div class="deal-check"> <input type="checkbox"> Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></div>
+					<!--  -->
+					<label class="deal-string">
+						<input type="checkbox" name="deal-checking" class="checkbox invisible"/>
+						<div class="deal-checkbox"></div>
+						<p class="deal-text">Соглашаюсь с рассылкой и принимаю <a href="#" class="deal-link">Условия договора</a></p>
+					</label>
+					<!--  -->
 					<button class="form-button">Отправить</button>
 				</form>
 			</div>

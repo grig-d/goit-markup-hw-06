@@ -821,7 +821,7 @@ textarea {
 	margin-bottom: 10px;
 }
 
-.label:nth-child(4){
+.label:nth-child(4) {
 	margin-bottom: 20px;
 }
 
@@ -894,6 +894,38 @@ textarea {
 	border-color: var(--accent-color);
 }
 
-.deal-check {
+.deal-string {
+	display: flex;
+	height: 24px;
 	margin-bottom: 30px;
+	align-items: center;
+	line-height: 1.714;
+}
+
+.deal-checkbox {
+	display: inline-block;
+	width: 16px;
+	height: 15px;
+	border: 2px solid var(--title-text-color);
+	border-radius: 2px;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox.invisible {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0, 0, 0, 0);
+	overflow: hidden;
+}
+
+.deal-text {
+	margin: 0 0 0 7px;
+	color: var(--primary-text-color);
+}
+.deal-link {
+	color: var(--accent-color);
 }
