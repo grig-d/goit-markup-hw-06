@@ -902,15 +902,16 @@ textarea {
 	line-height: 1.714;
 }
 
-.deal-checkbox {
+/* .deal-checkbox {
 	display: inline-block;
 	width: 16px;
 	height: 15px;
 	border: 2px solid var(--title-text-color);
 	border-radius: 2px;
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
+.checkboxo,
 .checkbox.invisible {
 	position: absolute;
 	width: 1px;
@@ -922,6 +923,24 @@ textarea {
 	overflow: hidden;
 }
 
+.checkbox-label span::before {
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 15px;
+	border: 2px solid var(--title-text-color);
+	border-radius: 2px;
+	margin-right: 8px;
+	vertical-align: middle;
+	background-image: url(../images/icons/check.svg);
+	background-position: center;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkboxo:checked + span::before {
+background-color: red;
+}
+
 .deal-text {
 	margin: 0 0 0 7px;
 	color: var(--primary-text-color);
@@ -929,3 +948,6 @@ textarea {
 .deal-link {
 	color: var(--accent-color);
 }
+
+/*  */
+
