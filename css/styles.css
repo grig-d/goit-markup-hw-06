@@ -31,6 +31,10 @@ img {
 	height: auto;
 }
 
+textarea {
+	resize: none;
+}
+
 :focus {
 	outline-color: var(--accent-color);
 }
@@ -805,14 +809,44 @@ img {
 	color: var(--title-text-color);
 }
 
-.form .form-button {
-/* margin-left: auto;
-margin-right: auto; */
+.form-field {
+	box-sizing: border-box;
+	width: 448px;
+	height: 40px;
+	outline: none;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.03em;
+	background-color: transparent;
 }
 
-/* resize: none; */
+/* .user-email {
+	display: inline-flex;
+	width: 358px;
+	height: 50px;
+	margin-right: 12px;
+	padding-left: 16px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	box-sizing: border-box;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	background-color: var(--footer-background-color);
+	
+	color: #ffffff;
+	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
+
+/* .form .form-button { */
+/* margin-left: auto;
+margin-right: auto; */
+
+
+
 .modal-window {
-	background-color: tan;
+	background-color: rgb(253, 241, 216);
 }
 /* ----------------------------------------------------------------------------- */
 /* experiment page */
