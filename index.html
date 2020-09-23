@@ -411,6 +411,59 @@
 						<use href="./images/icons/sprite.svg#sprite-close"></use>
 					</svg>
 				</button>
+				<p class="form-heading">Оставьте свои данные, мы вам перезвоним</p>
+				<form action="" class="form" id="contact-form">
+					<label class="label">
+						<span class="label-span">Имя</span>
+						<div class="field-wrap">
+							<input
+								type="text"
+								name="user-name"
+								class="form-field"
+								pattern="^[A-Za-zА-Яа-яЁёЇїЄєІі\s]+$"
+								autocomplete="off"
+								required
+							/>
+							<div class="input-icon-wrap">
+								<svg width="12" height="12">
+									<use href="./images/icons/sprite.svg#sprite-form-person"></use>
+								</svg>
+							</div>
+						</div>
+					</label>
+					<label class="label">
+						<span class="label-span">Телефон</span>
+						<div class="field-wrap">
+							<input type="tel" name="user-phone" class="form-field" pattern="[0-9]{10}" autocomplete="off" required />
+							<div class="input-icon-wrap">
+								<svg width="13" height="13">
+									<use href="./images/icons/sprite.svg#sprite-form-phone"></use>
+								</svg>
+							</div>
+						</div>
+					</label>
+					<label class="label">
+						<span class="label-span">Почта</span>
+						<div class="field-wrap">
+							<input type="email" name="user-email" class="form-field" autocomplete="off" />
+							<div class="input-icon-wrap">
+								<svg width="15" height="12">
+									<use href="./images/icons/sprite.svg#sprite-form-email"></use>
+								</svg>
+							</div>
+						</div>
+					</label>
+					<label class="label">
+						<span class="label-span">Комментарий</span>
+						<textarea name="user-message" class="form-field textarea" placeholder="Введите текст"></textarea>
+					</label>
+					<label class="deal-string">
+						<input type="checkbox" class="checkbox invisible" />
+						<span class="deal-text">Соглашаюсь с рассылкой и принимаю</span>
+						<a href="" class="deal-link">Условия договора</a>
+					</label>
+					<button class="form-button">Отправить</button>
+				</form>
 			</div>
 		</div>
 		<!-- script -->
