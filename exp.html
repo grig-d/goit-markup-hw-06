@@ -149,46 +149,34 @@
 				</button>
 				<!--  -->
 				<p class="form-heading">Оставьте свои данные, мы вам перезвоним</p>
-				<form action="" class="form" id="contact-form">
+				<form class="form" id="contact-form">
 					<label class="label">
 						<span class="label-span">Имя</span>
-						<div class="field-wrap">
-							<input
-								type="text"
-								name="user-name"
-								class="form-field"
-								pattern="^[A-Za-zА-Яа-яЁёЇїЄєІі\s]+$"
-								autocomplete="off"
-								required
-							/>
-							<div class="input-icon-wrap">
-								<svg width="12" height="12">
-									<use href="./images/icons/sprite.svg#sprite-form-person"></use>
-								</svg>
-							</div>
-						</div>
+						<input
+							type="text"
+							name="user-name"
+							class="form-field"
+							pattern="^[A-Za-zА-Яа-яЁёЇїЄєІі\s]+$"
+							autocomplete="off"
+							required
+						/>
+						<svg class="input-icon-wrap">
+							<use href="./images/icons/sprite.svg#sprite-form-person"></use>
+						</svg>
 					</label>
 					<label class="label">
 						<span class="label-span">Телефон</span>
-						<div class="field-wrap">
-							<input type="tel" name="user-phone" class="form-field" pattern="[0-9]{10}" autocomplete="off" required />
-							<div class="input-icon-wrap">
-								<svg width="13" height="13">
-									<use href="./images/icons/sprite.svg#sprite-form-phone"></use>
-								</svg>
-							</div>
-						</div>
+						<input type="tel" name="user-phone" class="form-field" pattern="[0-9]{10}" autocomplete="off" required />
+						<svg class="input-icon-wrap">
+							<use href="./images/icons/sprite.svg#sprite-form-phone"></use>
+						</svg>
 					</label>
 					<label class="label">
 						<span class="label-span">Почта</span>
-						<div class="field-wrap">
-							<input type="email" name="user-email" class="form-field" autocomplete="off" />
-							<div class="input-icon-wrap">
-								<svg width="15" height="12">
-									<use href="./images/icons/sprite.svg#sprite-form-email"></use>
-								</svg>
-							</div>
-						</div>
+						<input type="email" name="user-email" class="form-field" autocomplete="off" />
+						<svg class="input-icon-wrap">
+							<use href="./images/icons/sprite.svg#sprite-form-email"></use>
+						</svg>
 					</label>
 					<label class="label">
 						<span class="label-span">Комментарий</span>
